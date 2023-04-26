@@ -1,0 +1,33 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* phần banner */
+.banner {
+  background-image: url(./../img/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+.banner .banner_content {
+  padding-top: 120px;
+}
+.banner .banner_content ul {
+  font-size: 15px;
+  color: #d4d4d4;
+  margin: 0;
+  padding: 0;
+}
+.banner .banner_content ul a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+.banner .banner_content ul a:hover {
+  opacity: 1;
+}
+
+/* phần contact */
