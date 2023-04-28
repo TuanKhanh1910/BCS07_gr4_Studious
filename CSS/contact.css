@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #707070;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #ff6e65;
+}
 
 /* phần banner */
 .banner {
@@ -31,3 +39,73 @@
 }
 
 /* phần contact */
+/* content  */
+.contact .contact_content .contact_left h3 {
+  font-weight: 700;
+}
+.contact .contact_content .contact_left .contact_items .item_icon {
+  margin-right: 1rem;
+}
+.contact .contact_content .contact_left .contact_items .item_icon span {
+  color: #ff6e65;
+  font-size: 20px;
+}
+.contact .contact_content .contact_left .contact_items .item_text h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+.contact .contact_content .contact_left .contact_items .item_text p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  color: #707070;
+}
+.contact_items .item .item_text a {
+  text-decoration: none;
+  color: #707070;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.contact_items .item .item_text a:hover {
+  color: #ff6e65;
+}
+/* form  */
+.contact_form .form_title h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.contact_form .form_title h3 span {
+  color: #ff6e65;
+}
+.contact_form .form_title h3:before {
+  content: "";
+  background-color: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  left: -20px;
+  bottom: -8px;
+}
+.contact_form .form_title h3:after {
+  content: "";
+  background-color: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
+  left: 20px;
+  bottom: -15px;
+}
+
+.contact_form .form_left img {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+}
