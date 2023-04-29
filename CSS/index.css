@@ -1,0 +1,129 @@
+/* global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+/* HEADER */
+.header__content {
+  background-color: #0d369f;
+  color: white;
+  padding: 14px 15px;
+}
+.header__top__left li {
+  display: inline-block;
+  margin-right: 2em;
+}
+.header__top__left li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.header__top__left li a:hover {
+  color: #e84e9a;
+}
+.header__top__left li i {
+  margin-right: 8px;
+}
+.header__top__right li {
+  display: inline-block;
+  margin-right: 2em;
+}
+.header__top__right li a {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.header__top__right li a:hover {
+  color: #e84e9a;
+}
+.header__bottom {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease 0s;
+}
+.header__bottom h1 a {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  color: #0d369f;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.header__bottom span {
+  text-align: left;
+}
+.header__bottom h1 a:hover {
+  color: #ff6e65;
+}
+#navBar {
+  padding: 1.2rem 1rem;
+}
+#navbarNavDropdown .nav-item {
+  padding: 0 12px;
+}
+#navbarNavDropdown .nav-link {
+  padding: 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+#navbarNavDropdown .nav-link:hover {
+  color: #ff6e65;
+}
+#navbarNavDropdown .nav-link.active {
+  color: #ff6e65;
+}
+#navbarNavDropdown .dropdown .dropdown-menu {
+  transform: translateX(-50px);
+  background-color: white;
+  border: 1px solid transparent;
+  box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+  padding: 10px 20px;
+  /* text-align: center; */
+}
+#navbarNavDropdown .dropdown .dropdown-item {
+  font-size: 16px;
+  color: black;
+  padding: 5px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  transition: all 0.5s;
+}
+#navbarNavDropdown .dropdown .dropdown-item:hover {
+  color: #ff6e65;
+}
+.header__bottom form input {
+  font-size: 15px;
+  color: black;
+  background: transparent;
+  padding: 10px 35px 10px 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: 2px solid #eee;
+}
+.header__bottom form .btn {
+  color: #0d369f;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 0 20px 0 0;
+}
