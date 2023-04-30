@@ -50,7 +50,7 @@ a:hover {
 }
 .header__bottom {
   height: 90px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
