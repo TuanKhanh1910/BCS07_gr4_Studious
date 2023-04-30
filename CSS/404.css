@@ -1,0 +1,96 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #ff6e65;
+}
+
+/* phần main  */
+.banner_404 {
+  background-image: url(./../img/error.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+}
+.banner_404::before {
+  content: "";
+  background: linear-gradient(
+    75deg,
+    rgb(16 16 16 / 62%) 10%,
+    rgb(230 2 100 / 0%)
+  );
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.banner_404 .banner_content {
+  max-width: 500px;
+}
+.banner_404 .banner_content h1 {
+  font-size: 160px;
+  color: #fff;
+  line-height: 1;
+  font-weight: 500;
+}
+.banner_404 .banner_content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+}
+.banner_404 .banner_content .banner_search {
+    margin: 1.5em 0 0;
+}
+.banner_404 .banner_content .banner_search form {
+    position: relative;
+}
+.banner_404 .banner_content .banner_search form input {
+    padding: 10px 58px 10px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(255 255 255 / 29%);
+    border-radius: 35px;
+    background: #fff;
+    line-height: 36px;
+    width: calc(100% - 40px);
+    margin: auto;
+    outline: none;
+}
+.banner_404 .banner_content .banner_search form button {
+    border: none;
+    color: #ff6e65;
+    line-height: 1;
+    background: none;
+    position: absolute;
+    right: 10%;
+    padding: 18px 18px;
+    font-size: 16px;
+}
+.banner_404 .banner_content .banner_search .btn_return a {
+    background: none;
+    border-radius: 35px;
+    color: #eee;
+    margin-top: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+}
+.banner_404 .banner_content .banner_search .btn_return a:hover {
+color: #ff6e65;
+}
