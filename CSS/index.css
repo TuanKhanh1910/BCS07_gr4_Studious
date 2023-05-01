@@ -355,8 +355,8 @@ img {
 }
 .services .services__contennt {
   position: relative;
-  left: 20px;
-  top: -420px;
+  left: 120px;
+  top: -440px;
   z-index: 1;
 }
 .services .services__contennt .services__items {
@@ -389,4 +389,57 @@ img {
   color: #707070;
   margin: 0;
   font-size: 16px;
+}
+/* NUMBER */
+.number {
+  padding: 100px 0;
+}
+.number .number__title h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.number .number__title h2::after {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  bottom: -15px;
+  margin: 0 auto;
+}
+.number .number__title h2::before {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: -20px;
+  bottom: -8px;
+  margin: 0 auto;
+}
+.number .number__title h2 span {
+  color: #ff6e65;
+}
+.number .number__title p {
+  padding: 20px;
+  color: #707070;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.number .number__icon {
+  border-right: 1px solid #e9edf6;
+}
+
+.number .number__items h3 {
+  font-size: 46px;
+  font-weight: 600;
+  color: black;
+}
+.number .number__items p {
+  text-transform: uppercase;
 }

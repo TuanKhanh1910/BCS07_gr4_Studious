@@ -297,7 +297,7 @@
       <!-- SERVICES -->
       <section class="services">
         <div class="services__bg"></div>
-        <div class="container">
+        <div class="container position-absolute">
           <div class="services__contennt">
             <div class="row">
               <div class="col-4"> </div>
@@ -362,7 +362,46 @@
         </div>
       </section>
       <!-- NUMBER -->
-      <section class="number"></section>
+      <section class="number text-center">
+        <div class="container">
+          <div class="number__title">
+            <h2>
+              Strength in <span>Numbers</span>
+            </h2>
+            <p>Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+              <br>
+               dolorum fuga.</p>
+          </div>
+          <div class="number__content">
+            <div class="row">
+              <div class="col-3 number__icon">
+                <div class="number__items">
+                  <h3 class="counter" >6,300</h3>
+                  <p>LEARNERS & COUNTING</p>
+                </div>
+              </div>
+              <div class="col-3 number__icon">
+                <div class="number__items">
+                  <h3 class="counter" >638</h3>
+                  <p>TOTAL COURSES</p>
+                </div>
+              </div>
+              <div class="col-3 number__icon">
+                <div class="number__items">
+                  <h3 class="counter" >7,600</h3>
+                  <p>SUCCESSFUL STUDENTS</p>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="number__items">
+                  <h3 class="counter" >36</h3>
+                  <p>LANGUAGES</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- FEEDBACK -->
       <section class="feedback"></section>
       <!-- INSTRUCT -->
@@ -385,7 +424,9 @@
     ></script>
 
     <!-- jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
 
     <!-- owl carousel -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -406,6 +447,16 @@
           },
         },
       });
+    </script>
+
+    <!-- thư viện chạy số -->
+    <!-- waypoints cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- countup js -->
+    <script src="./js/jquery.countup.min.js"></script>
+
+    <script>
+      $('.counter').countUp();
     </script>
   </body>
 </html>
