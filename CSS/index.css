@@ -137,9 +137,6 @@ img {
   color: #ff6e65;
 }
 /* CAROUSEL */
-.studious__carousel {
-  /* position: relative; */
-}
 .studious__carousel .item .carousel__banner {
   height: 600px;
   width: 100%;
@@ -442,4 +439,213 @@ img {
 }
 .number .number__items p {
   text-transform: uppercase;
+}
+/* FEEDBACK */
+.feedback {
+  padding: 50px 0;
+}
+.feedback .feedback__title h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.feedback .feedback__title h2::before {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: -20px;
+  bottom: -8px;
+  margin: 0 auto;
+}
+.feedback .feedback__title h2::after {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  bottom: -15px;
+  margin: 0 auto;
+}
+.feedback .feedback__title h2 span {
+  color: #ff6e65;
+}
+.feedback .feedback__items {
+  background-color: #e9edf6;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 20px 62px var(--box-shadow-color);
+}
+.feedback .feedback__items .feedback__icon {
+  text-align: left;
+}
+.feedback .feedback__items i {
+  font-size: 22px;
+  /* text-align: left; */
+  color: #ff6e65;
+  line-height: 0.8;
+  display: inline-block;
+}
+.feedback .feedback__items .feedback__title p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #707070;
+  letter-spacing: 0.4px;
+}
+.feedback .feedback__items .feedback__title p q::before {
+  content: "";
+  font-size: 50px;
+  color: #ff6e65;
+  font-family: initial;
+  line-height: 0.8;
+  padding-top: 8px;
+  display: inline-block;
+}
+.feedback .feedback__items .feedback__sub {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  align-items: center;
+  margin-top: 1.5em;
+}
+.feedback .feedback__items .feedback__sub img {
+  border-radius: 50%;
+}
+.feedback .feedback__items .feedback__sub h5 {
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0;
+}
+.feedback .feedback__items .feedback__sub p {
+  margin: 0;
+}
+/* INSTRUCT */
+.instruct {
+  padding: 50px 0;
+}
+.instruct__title h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.instruct__title h2::before {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: -20px;
+  bottom: -8px;
+  margin: 0 auto;
+}
+.instruct__title h2::after {
+  content: "";
+  background: #707070;
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  bottom: -15px;
+  margin: 0 auto;
+}
+.instruct__title h2 span {
+  color: #ff6e65;
+}
+.instruct__content .instruct__items {
+  box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+}
+.instruct__content .instruct__items .instruct__top {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.instruct__content .instruct__items .instruct__top img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.instruct__content .instruct__items .instruct__top .instruct__info {
+  position: absolute;
+  bottom: -227px;
+  margin: 0;
+  background: rgb(8 8 8 / 29%);
+  padding: 20px 0;
+  transition: 0.5s all;
+  width: 100%;
+  text-align: center;
+}
+.instruct__content .instruct__items:hover .instruct__top .instruct__info {
+  bottom: 0;
+}
+.instruct__content .instruct__items .instruct__top .instruct__info i {
+  background: #fff;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  border-radius: 50%;
+  color: #0d369f;
+  font-size: 14px;
+}
+.instruct__content .instruct__items .instruct__top .instruct__info a {
+  transition: all 0.5s;
+}
+.instruct__content .instruct__items .instruct__top .instruct__info a:hover {
+  opacity: 0.8;
+}
+.instruct__content .instruct__items .instruct__bottom a {
+  color: black;
+  font-weight: 600;
+}
+.instruct__content .instruct__items:hover .instruct__bottom a {
+  color: #ff6e65;
+}
+.instruct__content .instruct__items .instruct__bottom p {
+  color: #707070;
+}
+/* CONTACT */
+.contact .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.contact h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+.contact p {
+  color: #707070;
+  font-size: 16px;
+  letter-spacing: 0.4;
+  line-height: 28px;
+}
+.contact button {
+  background: #ff6e65;
+  padding: 14px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.contact button:hover {
+  background-color: #0d369f;
 }
