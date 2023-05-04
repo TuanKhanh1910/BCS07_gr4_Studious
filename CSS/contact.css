@@ -14,6 +14,10 @@ a:hover {
 }
 
 /* HEADER */
+header {
+  /* position: fixed;
+  width: 100%; */
+}
 .header__content {
   background-color: #0d369f;
   color: white;
@@ -50,7 +54,6 @@ a:hover {
 }
 .header__bottom {
   height: 90px;
-  /* position: fixed; */
   width: 100%;
   z-index: 999;
   transition: all 0.4s ease 0s;
@@ -234,6 +237,9 @@ a:hover {
   outline: none;
   margin-bottom: 16px;
 }
+.contact_form .form_right input:focus {
+  border: 1px solid #ff6e65;
+}
 .contact_form .form_right .form-input textarea {
   width: 100%;
   color: #060606;
@@ -245,6 +251,9 @@ a:hover {
   border-radius: 8px;
   height: 120px;
   margin: 0 0 20px 0;
+}
+.contact_form .form_right .form-input textarea:focus {
+  border: 1px solid #ff6e65;
 }
 .contact_form .form_right button {
   background-color: #ff6e65;
@@ -294,10 +303,11 @@ footer .main__footer .email form input {
   border: 1px solid #cecece;
   border-radius: 5px 0 0 5px;
   display: block;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 footer .main__footer .email form input:focus {
-  border: none;
-  outline: 3px solid rgba(10, 191, 82, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
 }
 footer .main__footer .email p {
   margin-top: 10px;
@@ -305,7 +315,6 @@ footer .main__footer .email p {
   font-size: 18px;
   letter-spacing: 1.2px;
 }
-
 footer .main__footer .email form button {
   height: 60px;
   width: 100px;
@@ -373,10 +382,10 @@ footer .footer__icon i {
   border-radius: 50%;
   margin-right: 10px;
   transition: all 0.5s;
-  cursor: pointer;
 }
 footer .footer__icon i:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 footer .copyright {
   text-align: center;

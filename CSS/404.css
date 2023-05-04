@@ -55,46 +55,45 @@ a:hover {
   color: #fff;
 }
 .banner_404 .banner_content .banner_search {
-    margin: 1.5em 0 0;
+  margin: 1.5em 0 0;
 }
 .banner_404 .banner_content .banner_search form {
-    position: relative;
+  position: relative;
 }
 .banner_404 .banner_content .banner_search form input {
-    padding: 10px 58px 10px 20px;
-    font-size: 16px;
-    border: 1px solid rgb(255 255 255 / 29%);
-    border-radius: 35px;
-    background: #fff;
-    line-height: 36px;
-    width: calc(100% - 40px);
-    margin: auto;
-    outline: none;
+  padding: 10px 58px 10px 20px;
+  font-size: 16px;
+  border: 1px solid rgb(255 255 255 / 29%);
+  border-radius: 35px;
+  background: #fff;
+  line-height: 36px;
+  width: calc(100% - 40px);
+  margin: auto;
+  outline: none;
 }
 .banner_404 .banner_content .banner_search form button {
-    border: none;
-    color: #ff6e65;
-    line-height: 1;
-    background: none;
-    position: absolute;
-    right: 10%;
-    padding: 18px 18px;
-    font-size: 16px;
+  border: none;
+  color: #ff6e65;
+  line-height: 1;
+  background: none;
+  position: absolute;
+  right: 10%;
+  padding: 18px 18px;
+  font-size: 16px;
 }
 .banner_404 .banner_content .banner_search .btn_return a {
-    background: none;
-    border-radius: 35px;
-    color: #eee;
-    margin-top: 50px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    transition: all 0.5s;
+  background: none;
+  border-radius: 35px;
+  color: #eee;
+  margin-top: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
 }
 .banner_404 .banner_content .banner_search .btn_return a:hover {
-color: #ff6e65;
+  color: #ff6e65;
 }
-
 
 /* footer */
 footer .main__footer {
@@ -131,10 +130,11 @@ footer .main__footer .email form input {
   border: 1px solid #cecece;
   border-radius: 5px 0 0 5px;
   display: block;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 footer .main__footer .email form input:focus {
-  border: none;
-  outline: 3px solid rgba(10, 191, 82, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
 }
 footer .main__footer .email p {
   margin-top: 10px;
@@ -210,10 +210,10 @@ footer .footer__icon i {
   border-radius: 50%;
   margin-right: 10px;
   transition: all 0.5s;
-  cursor: pointer;
 }
 footer .footer__icon i:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+  transition: 0.3s ease;
 }
 footer .copyright {
   text-align: center;
@@ -223,7 +223,7 @@ footer .copyright {
 }
 footer .copyright p {
   margin: 0;
-  color: #a0a0a0;;
+  color: #a0a0a0;
 }
 footer .copyright p a {
   color: white;
