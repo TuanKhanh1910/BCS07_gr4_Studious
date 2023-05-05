@@ -275,7 +275,7 @@ footer .main__footer {
   padding: 220px 0 100px;
   background-color: #060e1f;
   position: relative;
-}
+} 
 footer .main__footer .email {
   padding: 30px 20px;
   display: flex;
@@ -339,7 +339,7 @@ footer .main__footer h5 {
   border-bottom: 1px solid rgba(87, 87, 87, 0.3);
   margin-bottom: 30px;
 }
-footer .main__footer ul {
+footer .main__footer .row ul {
   margin-top: 20px;
 }
 footer .main__footer ul li {
