@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu .main__menu{
+        background-color: blueviolet;
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-  </head>
+    }
+    .menu .fix__top{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: blueviolet;
 
-  <body>
-    <h1>abc</h1>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    }
+    .main{
+        padding: 2000px;
+    }
+</style>
+<body>
+    <div class="menu">
+        <div class="top__menu">
+            <h3>Thanh menu top</h3>
+        </div>
+        <div id="main__menu" class="main__menu">
+            <h1>Thanh menu bị giữ lại khi cuộc chuột</h1>
+        </div>
+    </div>
+    <div class="main">
+    </div>
+    <script>
+        //giữ thanh menu
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop > 30){
+                document.getElementById('main__menu').classList.add('fix__top');
+            } else {
+                document.getElementById('main__menu').classList.remove('fix__top');            
+            }
+        }
+    </script>
+</body>
 </html>
