@@ -98,8 +98,8 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavDropdown"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
               aria-expanded="false"
               aria-label="Toggle navigation"
@@ -146,18 +146,18 @@
                   <a class="nav-link" href="#">contact</a>
                 </li>
               </ul>
+              <form class="d-flex position-relative" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Enter Keyword"
+                  aria-label="Search"
+                />
+                <button class="btn" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
             </div>
-            <form class="d-flex position-relative" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Enter Keyword"
-                aria-label="Search"
-              />
-              <button class="btn" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
           </div>
         </nav>
       </div>
@@ -303,8 +303,7 @@
       </section>
       <!-- SERVICES -->
       <section class="services">
-        <div class="services__bg"></div>
-        <div class="container position-absolute">
+        <div class="container">
           <div class="services__contennt">
             <div class="row">
               <div class="col-xl-4"></div>
