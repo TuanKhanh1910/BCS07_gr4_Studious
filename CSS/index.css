@@ -1175,6 +1175,9 @@ footer .footer__copyright a {
   }
 }
 @media screen and (max-width: 575.98px) {
+  #mybody {
+    overflow-x: hidden;
+  }
   .services {
     height: 600px;
   }
