@@ -22,7 +22,28 @@ window.onscroll = function () {
 // dark and light
 document.getElementById("switchButton").onclick = function () {
   document.getElementById("mybody").classList.toggle("dark");
+  // var SetTheme = document.getElementById("mybody").classList.toggle("dark");
+  var theme;
+
+  if (document.getElementById("mybody").classList.contains("dark")) {
+    console.log("Dark mode");
+    theme = "DARK";
+  } else {
+    console.log("Light mode");
+    theme = "LIGHT";
+  }
+
+  // save to localStorage
+
+  localStorage.setItem("PageTheme", JSON.stringify(theme));
+  // ensure you convert to JSON like have done ----- JSON.stringify(theme)
 };
+let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+console.log("GetTheme");
+
+if (GetTheme === "DARK") {
+  document.getElementById("mybody").classList = "dark";
+}
 
 // document.getElementById("btnBarClose").onclick = function () {
 //   if ((document.getElementById("fa__bars").style.display = "none")) {
