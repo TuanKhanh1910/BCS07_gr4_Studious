@@ -42,6 +42,57 @@ html, body{
 header nav .menu .right .active{
     color: #ff4f81;
 }
+/* sáng tối */
+.dark{
+    background-color: #060e1f;
+}
+.dark h3, p{
+    color: white;
+}
+.dark .count h1{
+    color: white;
+}
+.dark footer .main__footer .email {
+    background-color: #060e1f;
+}
+.dark footer .main__footer .email input {
+    background-color: #0f1625;
+}
+
+.dark footer .main__footer .email h1, p {
+    color: white;
+}
+.dark header nav{
+    padding: 20px 0;
+    background-color: #060e1f;
+}
+.dark header nav .menu ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .5s;
+}
+.dark header nav .menu .search input{
+    height: 50px;
+    width: 280px;
+    background-color: #060e1f;
+    color: white;
+}
+.dark header nav .menu .search input:focus{
+    outline: none;
+    border: 3px solid white;
+}
+.dark .group .group__item .item{
+    background-color: #060e1f;
+    border: 1px solid #eee;
+}
+.dark .group .group__item .item h4{
+    color: white;
+}
+
+
+
+
 
 /* menu */
 header .top__menu{
@@ -263,7 +314,7 @@ header nav .menu .moon a:hover i{
 
 .count p{
     padding: 10px;
-    border-right: 1px solid red;
+    /* border-right: 1px solid red; */
 
 }
 .count p:last-child{
@@ -274,7 +325,7 @@ header nav .menu .moon a:hover i{
 /* group */
 .group{
     padding: 100px 0;
-    background-color: #f8f9ff;
+    /* background-color: #f8f9ff; */
 }
 .group__content{
     display: flex;

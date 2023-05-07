@@ -12,3 +12,17 @@ window.onscroll = function(){
         document.documentElement.scrollTop = 0;
     }
 }
+var body = document.getElementById("myBody");
+var dark = document.querySelector("header nav .moon a:first-child");
+var light = document.querySelector("header nav .moon a:last-child");
+light.style.display = "none";
+dark.onclick = function(){
+    dark.style.display = "none";
+    light.style.display = "block";
+    body.classList.add("dark");
+}
+light.onclick = function(){
+    dark.style.display = "block";
+    light.style.display = "none";
+    body.classList.remove("dark");
+}
