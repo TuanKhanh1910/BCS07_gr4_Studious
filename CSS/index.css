@@ -1190,6 +1190,9 @@ footer .footer__copyright a {
     padding: 10px;
     margin: 10px 0;
   }
+  .light__dark .mode-container {
+    padding: 10px;
+  }
 }
 @media screen and (max-width: 545px) {
   .header__content .header__top__right li {
