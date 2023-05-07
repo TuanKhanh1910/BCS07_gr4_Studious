@@ -8,6 +8,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+h1 {
+  padding: 0;
+  margin: 0;
+}
 li {
   list-style: none;
 }
@@ -127,9 +131,6 @@ head .nav-fixed {
 }
 .header__bottom .navbar-toggler .fa-times {
   display: none;
-}
-.header__bottom h1 {
-  transform: translateY(4px);
 }
 .header__bottom h1 a {
   margin: 0;
