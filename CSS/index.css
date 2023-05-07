@@ -128,6 +128,9 @@ head .nav-fixed {
 .header__bottom .navbar-toggler .fa-times {
   display: none;
 }
+.header__bottom h1 {
+  transform: translateY(4px);
+}
 .header__bottom h1 a {
   margin: 0;
   padding: 0;
@@ -236,7 +239,9 @@ head .nav-fixed {
 .header__bottom form .btn:hover {
   color: #ff6e65;
 }
-
+.light__dark .mode-container {
+  transform: translateY(2px);
+}
 /* DARK AND LIGHT */
 /* light theme */
 #mybody {
