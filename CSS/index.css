@@ -29,7 +29,9 @@ img {
 .dark h5 {
   color: white;
 }
-
+.dark h6 {
+  color: white;
+}
 /* HEADER */
 /* header {
   position: fixed;

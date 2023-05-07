@@ -47,7 +47,7 @@ header nav .menu .right .active {
 }
 
 /* menu */
-header .top__menu {
+/* header .top__menu {
   padding: 0 30px;
   height: 60px;
   background-color: #0d369f;
@@ -86,7 +86,7 @@ header .top__menu .top__right ul li a:hover {
 }
 
 /* memu */
-header nav {
+/* header nav {
   padding: 20px 0;
   background-color: white;
 }
@@ -176,7 +176,7 @@ header nav .menu .moon a i {
 }
 header nav .menu .moon a:hover i {
   color: #ff4f81;
-}
+}  */
 
 /* banner */
 .banner {
@@ -256,6 +256,9 @@ header nav .menu .moon a:hover i {
 }
 .count h1 {
   font-size: 80px;
+}
+.dark .count h1 {
+  color: white;
 }
 
 .count p {
@@ -487,6 +490,9 @@ main .blog .blog__text a {
   color: #060606;
   transition: all 0.5s;
   display: block;
+}
+.dark main .blog .blog__text a {
+  color: white;
 }
 main .blog .blog__text a:hover {
   color: #ff4f81;
